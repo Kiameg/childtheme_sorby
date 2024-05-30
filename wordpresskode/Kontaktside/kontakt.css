@@ -1,0 +1,108 @@
+/*skjuler containeren 'conditional-fields'*/
+.hidden {
+  display: none;
+}
+
+/* Styling for kontaktformularen */
+#contact-form {
+  margin-bottom: 1rem;
+  font-family: poppins;
+  font-size: 1rem;
+}
+
+/* Styling for labels */
+label {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for input, select og textarea elementer */
+input,
+select,
+textarea {
+  border-radius: 5px;
+}
+
+/* Styling for .select-game og .select-game-items */
+.select-game,
+.select-game-items {
+  border-radius: 5px;
+}
+
+/* Styling for den brugerdefinerede dropdown container */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Styling for det valgte spil */
+.select-game {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Styling for dropdown elementer */
+.select-game-items {
+  position: absolute; /* Positionerer elementerne absolut i forhold til deres nærmeste positionerede parent */
+  color: black;
+  background-color: #f1f1f1;
+  width: 100%; /* Gør dropdown elementerne 100% brede af deres parent */
+  z-index: 99; /* Sørger for at dropdown elementerne er ovenpå andre elementer */
+  border: 1px solid #ccc;
+  border-top: none; /* Fjerner topkanten for et sammenhængende udseende */
+  display: none; /* Skjuler dropdown elementerne som standard */
+  max-height: 200px; /* Begrænser højden til 200px og tilføjer scrollbar hvis nødvendigt */
+  overflow-y: auto; /* Tilføjer lodret scrollbar hvis indholdet er for stort */
+}
+
+/* Styling for dropdown elementer labels */
+.select-game-items label {
+  padding: 10px;
+  display: block; /* Gør labels til blokkelementer, så de fylder hele bredden */
+  cursor: pointer;
+}
+
+/* Hover effekt for dropdown elementer labels */
+.select-game-items label:hover {
+  background-color: #ddd;
+}
+
+/* Styling for send-knap */
+.send_btn {
+  --edge-size: 1em;
+  height: 3rem;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+  clip-path: polygon(calc(100% - var(--edge-size)) 0%, 100% var(--edge-size), 100% 100%, var(--edge-size) 100%, 0% calc(100% - var(--edge-size)), 0 0);
+} /* Skaber en polygon form for knappen */
+
+/* Hover effekt for send-knap */
+.send_btn:hover {
+  color: #3ba4aa;
+}
+
+/* Styling for beskedfeltet */
+#message {
+  height: 7rem;
+}
+
+/* Styling for bekræftelsesfelt */
+.confirmation_field {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+/* Styling for bekræftelsesmeddelelse */
+.confirmation_msg {
+  text-shadow: 1px 1px 10px #cffcff;
+  text-align: center;
+  font-size: 1.1rem;
+  display: none;
+}

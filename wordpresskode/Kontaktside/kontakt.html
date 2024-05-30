@@ -1,0 +1,56 @@
+<form id="contact-form">
+    <label for="purpose">Hvad drejer henvendelsen sig om?</label>
+    <select id="purpose" name="purpose">
+        <option value="">Vælg</option>
+        <option value="pris">Pris</option>
+        <option value="tilmelding">Tilmelding</option>
+        <option value="spørgsmål">Spørgsmål</option>
+        <option value="andet">Andet</option>
+    </select>
+    <label for="name">Fulde navn</label>
+    <input type="text" id="name" placeholder="Jens Jensen" name="name" required>
+
+    <div id="conditional-fields" class="hidden">
+        <label for="discord">Discord tag</label>
+        <input type="text" id="discord" placeholder="Jens#1367" name="discord" required>
+        <label for="level">Hvilket Niveau har du?</label>
+        <select id="level" name="level">
+            <option value="">Vælg Niveau</option>
+            <option value="nybegynder">Nybegynder</option>
+            <option value="oevet">Øvet</option>
+            <option value="spørgsmål">Avanceret</option>
+            <option value="hygge">Jeg spiller for hyggen</option>
+        </select>
+
+        <div class="custom-select" id="select-game-con">
+            <label>Hvilke spil er du interreseret i?</label>
+            <div class="select-game">Vælg Spil</div>
+            <div class="select-game-items">
+                <label><input type="checkbox" name="spil" value="magicthegathering"> Magic the Gathering</label>
+                <label><input type="checkbox" name="spil" value="counterstrike"> Counter Strike</label>
+                <label><input type="checkbox" name="spil" value="valorant"> Valorant</label>
+                <label><input type="checkbox" name="spil" value="roblox"> Roblox</label>
+                <label><input type="checkbox" name="spil" value="minecraft"> Minecraft</label>
+                <label><input type="checkbox" name="spil" value="leagueoflegends"> League of Legends</label>
+                <label><input type="checkbox" name="spil" value="rocketleague"> Rocket League</label>
+                <label><input type="checkbox" name="spil" value="fortnite"> Fortnite</label>
+                <label><input type="checkbox" name="spil" value="ikkenoget"> Ikke vigtigt</label>
+            </div>
+        </div>
+
+        <label for="birthday">Fødselsdag</label>
+        <input type="date" id="birthday" name="birthday" required>
+    </div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="jensjensen@gmail.com" name="email" required>
+    <label for="phone">Telefon</label>
+    <input type="tel" id="phone" placeholder="31456755" name="phone" required>
+
+    <label for="message">Besked</label>
+    <textarea id="message" placeholder="Jeg vil gerne høre nærmere om..." name="message"></textarea>
+    <div class="confirmation_field">
+        <input class="send_btn" type="submit" value="Send">
+    </div>
+</form>
+<p class="confirmation_msg">Din besked er blevet sendt!</p>
